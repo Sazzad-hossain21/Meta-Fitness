@@ -1,0 +1,751 @@
+/* Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+/* Common CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* Header */
+
+header {
+    background: url(./img/Hero_image.png) no-repeat left top / cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-menus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+}
+
+.nav-menu li a:hover {
+    color: #D06A2B;
+}
+
+.nav-social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-social-links li {
+    margin-left: 15px;
+}
+
+.nav-social-links li a {
+    color: #ffffff; 
+}
+
+.container {
+    padding: 3% 5% 8% 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header .container h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#D06A2B;
+    margin-top: 40px;
+}
+
+header .container h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+header .container h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #086303;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    box-shadow: 0px 4.51917px 67.7876px rgba(1, 5, 47, 0.15);
+    border-radius: 40px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #D06A2B;
+}
+
+/* Hamburger */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+
+}
+
+/* Training Section */
+
+.training-section .container {
+    padding: 3% 5%;
+}
+
+.training-section .container h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    color: #232323;
+}
+
+.training-section .container h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: #D06A2B;
+}
+
+.training-section .container p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F6F6F;
+    margin-top: 40px;
+    padding: 0 5%;
+}
+
+/* Expert Section */
+
+.expert-section {
+    background: url(./img/before_after_background.png) no-repeat left top / cover;
+    padding: 3% 5%;
+}
+
+.expert-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before-after-images {
+    flex-basis: 40%;
+}
+
+.before-after-images img{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.expert-content-container {
+    flex-basis: 60%;
+    margin-left: 20px;
+}
+
+.expert-section .container h2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 35px;
+    color: #ffffff;   
+}
+
+.expert-section .container p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 2em;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.expert-section .btn {
+    text-transform: uppercase;
+}
+
+/* Goal Section */
+
+.goal .container {
+    display: flex;
+    background: #ffffff;
+    padding: 3%;
+}
+
+.goal .container .box-container {
+    flex-basis: 30%;
+    background: #FAFAFA;
+    border: 1.06944px solid #E0E0E0;
+    border-radius: 0px;
+    filter: drop-shadow(1.06944px 7.48605px 23.5276px rgba(208, 106, 43, 0.25));
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -200px;
+}
+
+.box-container2 {
+    margin-left: 50px;
+}
+
+.box-container img {
+    width: 80px;
+}
+
+.box-container h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #2A2A2A;
+}
+
+.box-container p {
+    font-size: 14px;
+    color: #6F6F6F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box-container .box-container-btn {
+    color: #D06A2B;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Trainer Section */
+
+.trainer {
+    background: #081549;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.trainer .container {
+    display: flex;
+}
+
+.trainer .left {
+    flex-basis: 50%;
+    display: flex;
+    position: relative;
+}
+
+.trainer .left img {
+    position: absolute; 
+    width: 200px;   
+}
+
+.trainer .left .top-image {
+    top: 0;
+    left: 130px;
+    z-index: 1;
+    width: 220px;
+}
+
+.trainer .left .left-image {
+    top: 130px;
+    left: 25px;
+}
+
+.trainer .left .right-image {
+    top: 127px;
+    left: 250px;
+}
+
+.trainer .right {
+    flex-basis: 40%;
+    margin-left: 20px;
+}
+
+.trainer .right h3 {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.trainer .right p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/* Workout Section */
+
+.workout .workout-container {
+    display: flex;
+}
+
+.workout .workout-container h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.workout .workout-container h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.workout .content-left {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.workout .content-left h2{
+    font-size: 70px;
+    font-weight: 600;
+    color: #081549;
+    line-height: 1.2;
+    margin-bottom: 80px;
+}
+
+.workout .content-left .brush {
+    width: 300px;
+    position: absolute;
+    top: 275px;
+    z-index: -1;
+}
+
+.content-left .bottom-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-left .img-2 {
+    margin-left: 250px;
+    margin-top: -55px;
+}
+
+.content-left .bottom-images img {
+    width: 250px;
+}
+
+.workout .content-right {
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+.workout .content-right p {
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.workout .content-right .img-3 {
+    margin-top: 185px;
+}
+
+.workout .content-right img {
+    width: 400px;
+}
+
+/* Testimonial Section */
+
+.testimonial {
+    background: rgba(8, 99, 3, 0.25);
+}
+
+.testimonial h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.testi-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+.testi-box-container {
+    flex-basis: 28%;
+    background: #F5F6F7;
+    box-shadow: 1.12997px 7.90979px 24.8594px rgba(208, 106, 43, 0.25);
+    border-radius: 0px;
+    padding: 20px 40px;
+}
+
+.testi-box-container p {
+    color: #1B1C1F;
+    font-size: 16px;
+}
+
+.testi-box-container h5 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Claim Offer Section*/
+
+.claim {
+    background: #081549;
+}
+
+.claim .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.claim h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.claim p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Footer  */
+
+footer {
+    background: #D9D9D9;
+}
+
+.col-4 {
+    display: flex;
+}
+
+.column {
+    margin-left: 20px;
+}
+
+.col-1 {
+    flex-basis: 24%;
+}
+
+.col-4 .col-1 h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #232323;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6F6F6F;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    color: #D06A2B;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.copy-left {
+    color: #6F6F6F;
+    font-size: 10px;
+}
+
+.copy-right {
+    color: #000000;
+    font-size: 12px;
+}
+
+/* =========Responsive Starts============ */
+
+@media (max-width: 991px) {
+
+    .goal .container .box-container {
+        margin-bottom: 0;
+    }
+    .trainer {
+        padding-top: 30px;
+    }
+
+    .trainer .container {
+        flex-direction: column;
+    }
+
+    .trainer .container .left {
+        margin-left: 200px;
+    }
+
+    .trainer .container .right {
+        margin-top: 500px;
+    }
+
+    .content-left .img-2 {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #081549;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .expert-section .container {
+        flex-direction: column;
+    }
+
+    .expert-section .container h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .goal .container {
+        flex-direction: column;
+    }
+
+    .box-container2 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .trainer .container .left {
+        margin-left: 100px;
+    }
+
+    .workout .workout-container {
+        flex-direction: column;
+    }
+
+    .workout .workout-container .content-left,
+    .workout .workout-container .content-right {
+        text-align: center;
+    }
+
+    .workout .workout-container .content-right p {
+        margin: 0 auto;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .workout .content-right .img-3 {
+        margin-top: 20px;
+    }
+    
+    .testi-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 670px) {
+
+    header .container h1,
+    header .container h2 {
+        font-size: 40px;
+    }
+
+    header .container h3 {
+        font-size: 16px;
+    }
+
+    .training-section .container h2 {
+        font-size: 30px;
+    }
+
+    .training-section .container h3 {
+        font-size: 25px;
+    }
+
+    .trainer .container .left {
+        margin-left: 0;
+    }
+
+    .workout .content-left h2 {
+        font-size: 50px;
+    }
+
+    .workout .content-left .brush {
+        width: 150px;
+        top: 220px;
+    }
+
+    .trainer .left img {
+        width: 150px;
+    }
+
+    .trainer .left .top-image {
+        width: 170px;
+    }
+
+    .trainer .container .right {
+        margin-top: 400px;
+    }
+
+    .workout .content-right img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 440px) {
+    header .container h1,
+    header .container h2 {
+        font-size: 30px;
+    }
+
+    header .container h3 {
+        font-size: 15px;
+    }
+
+    .training-section .container h2 {
+        font-size: 25px;
+    }
+
+    .training-section .container h3 {
+        font-size: 20px;
+    }
+
+    .expert-section .container h2 {
+        font-size: 25px;
+    }
+
+    .trainer .left .top-image {
+        left: 20px;
+    }
+
+    .trainer .left .left-image {
+        top: 220px;
+        left: 30px;
+    }
+
+    .trainer .left .right-image {
+        left: 200px;
+    }
+
+    .trainer .container .right {
+        margin-top: 500px;
+    }
+
+    .testimonial h2 {
+        font-size: 25px;
+    }
+
+    .claim h2 {
+        font-size: 25px;
+    }
+
+    .col-4 {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .trainer .left img {
+        width: 120px;
+    }
+
+    .trainer .left .top-image {
+        width: 140px;
+    }
+}
